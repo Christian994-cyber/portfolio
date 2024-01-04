@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Explora&family=Galada&family=Kaushan+Script&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala&display=swap');
 
 :root {
-    --cor-primaria: #1A120B;
-    --cor-secundaria: #E3CCAE;
-    --cor-terciaria: #B8621B;
-    --cor-hover: #262A56;
+    --cor-primaria: #040303; /*background */
+    --cor-secundaria: #FFF2D8;
+    --cor-terciaria: #EEF5EE;
+    --cor-hover: #54BAB9;
 
     --font-primaria: 'Montserrat', sans-serif;
     --font-secundaria: 'Sarala', sans-serif;
@@ -38,7 +38,7 @@ body {
 }
 
 .cabecalho__menu__links:hover {
-    color: var(--cor-active);
+    color: var(--cor-hover);
 }
 
 
@@ -79,6 +79,7 @@ h1 > strong {
     gap: 32px;
 }
 
+
 .apresentacao__links__subtitulo {
     font-family: var(--font-primaria);
     font-weight: 400;
@@ -97,14 +98,18 @@ h1 > strong {
     border-radius: 16px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     border: 2px solid var(--cor-terciaria); /* solid, groove, ridge, inset, outset, dashed  */
     border-radius: 8px;
 }
 
+.apresentacao__links__navegacao:hover {
+    color: var(--cor-hover);
+}
+
 .apresentacao__links__links:hover {  /* Quando Mouse passar em cima */
-    background-color: var(--cor-hover);
-    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-hover);
     padding: 3%;
 }
 
